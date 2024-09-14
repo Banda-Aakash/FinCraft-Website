@@ -7,6 +7,7 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="container">
+                <img src='/logo2.png' alt="Logo" className="logo" />
                 <ul className="navList">
                     <li className="navItem">
                         <Link to="/" className="navLink">Home</Link>
@@ -18,6 +19,7 @@ export default function Navbar() {
                         <Link to="/contact" className="navLink">Contact Us</Link>
                     </li>
                 </ul>
+                    
             </div>
         </nav>
     );
