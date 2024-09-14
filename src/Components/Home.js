@@ -67,7 +67,10 @@ const Home = () => {
                     </div>
                 </Link>
             </div>
-            <div>ihi</div>
+            <div className='container1'>ihi</div>
+            <div className='container2'>ihi</div>
+            <div className='container3'>ihi</div>
+
         </div>
     );
 };
