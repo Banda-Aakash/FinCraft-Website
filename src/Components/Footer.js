@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="footer-company">
         <p>© 2024, Fincraft Technology Pvt Ltd.</p>
         <p>
-          Address – 4th Floor, Building, 387, Koramangala 4th Block, Koramangala, Bengaluru, Karnataka 560034
+          Address – 4th Floor, Building, 387, Hitech City, Hyderabad, Telangana 500015
         </p>
       </div>
     </footer>
