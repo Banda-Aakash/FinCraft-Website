@@ -1,12 +1,52 @@
 .home-page {
-  margin-top: 80px;
+  margin-top: 50px;
   min-height: 100vh;
   flex-direction: row;
   /* padding: 0 50px; */
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Image {
+  padding-right: 200px;
+  max-width: 250px;
+  display: inline;
+}
+
+
+.carousel-container {
+  margin-top: 30px;
+  flex: 1; /* Adjust to take available space */
+  max-width: 40%; /* Limit the max width */
+  margin-left: auto; /* Align carousel to the right */
+}
+
+/* Hide carousel thumbnails */
+.carousel .thumbs-wrapper {
+  display: none;
+}
+
+/* Hide carousel status (e.g., slide number) */
+.carousel .carousel-status {
+  display: none;
+}
+
+.carousel .slide img {
+  max-width: 300px; /* Set a max height for the images */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Adjust carousel indicators and arrows */
+.carousel .control-arrow, .carousel .carousel-status {
+  filter: invert(100%); /* Make arrows and status white for better visibility */
+}
+
+
 .content {
   width: 100%;
-  max-width:60%;
+  max-width: 60%;
   text-align: center;
   margin-bottom: 130px;
   padding: 0 50px;
@@ -15,7 +55,7 @@
 
 .heading {
   /* color: #1CC099; */
-  background: linear-gradient( 60deg,#1cc099, #0087fd);
+  background: linear-gradient(60deg, #1cc099, #0087fd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,7 +129,6 @@
   padding-left: 150px;
   padding-right: 150px;
   background: linear-gradient(#eccfcf, #a85dc2);
-  
 }
 .container3 {
   display: flex;
@@ -98,7 +137,7 @@
   padding: 80px;
   padding-left: 150px;
   padding-right: 150px;
-  background: linear-gradient(#1CC099, #0087fd);
+  background: linear-gradient(#1cc099, #0087fd);
 }
 
 .container4 {
@@ -110,30 +149,33 @@
   padding-right: 150px;
   background: linear-gradient(#e760aa, #bf66dc);
 }
-.Heading{
+.Heading {
   margin: 0px;
   font-family: "Kalam", cursive;
   font-weight: 700;
   font-style: normal;
   font-size: 40px;
 }
-.Description{
+.Description {
   margin: 0px;
   font-family: "Sofadi One", system-ui;
   font-weight: 600;
   font-style: normal;
   font-size: 20px;
-}  
-.img{
+}
+.img {
   max-width: 150px;
   height: auto;
 }
 
-
-.content2{
-  max-width: 30%;
+.augmountimg {
+  max-width: 450px;
+  height: auto;
 }
 
+.content2 {
+  max-width: 30%;
+}
 
 /* Mobile-specific styles */
 @media (max-width: 576px) {
@@ -163,7 +205,10 @@
     margin: 10px 0; /* Adjust margin */
   }
 
-  .container1, .container2, .container3, .container4 {
+  .container1,
+  .container2,
+  .container3,
+  .container4 {
     flex-direction: column; /* Stack items vertically */
     padding: 20px 10px; /* Reduce padding */
     align-items: center; /* Center items */
@@ -190,7 +235,3 @@
   }
 }
 
-.Image{
-  max-width: 50px;
-  display: inline;
-}

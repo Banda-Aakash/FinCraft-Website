@@ -83,8 +83,10 @@ body, html {
 .timeline-section,
 .vision-section,
 .team-section {
-  margin-bottom: 50px;
+  /* margin-bottom: 30px; */
   padding: 20px;
+  padding-bottom: 50px;
+
 }
 
 .story-section h2,

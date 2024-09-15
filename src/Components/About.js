@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css'; // Import the CSS for styling
 import './About.css';
+import CardComponent from './Cardcomponent';
+
 
 const About = () => {
     const customTheme = {
@@ -48,7 +50,7 @@ const About = () => {
             <div className="about-container">
                 <div className="about-content">
                     <h1>About Us</h1>
-                    <p>Saving money is the first step toward achieving financial freedom. At FinCraft, we believe that even the smallest contributions can lead to big results. We're here to make saving a natural part of your routine, helping you build a better financial future, one day at a time.</p> 
+                    <p>Saving money is the first step toward achieving financial freedom. At FinCraft, we believe that even the smallest contributions can lead to big results. We're here to make saving a natural part of your routine, helping you build a better financial future, one day at a time.</p>
                     <p>Yours truly, <br /> FinCraft ❤️</p>
                 </div>
             </div>
@@ -117,7 +119,7 @@ const About = () => {
             <section className="vision-section">
                 <h2>Our Vision</h2>
                 <p>
-                    At FinCraft, our vision is to democratize access to financial services, empowering individuals everywhere 
+                    At FinCraft, our vision is to democratize access to financial services, empowering individuals everywhere
                     to take control of their financial futures. We believe in making investing easy, secure, and accessible.
                 </p>
             </section>
@@ -130,7 +132,26 @@ const About = () => {
                     We foster a culture of innovation, collaboration, and transparency. At FinCraft, we believe that
                     great products are built by empowered teams who care deeply about their work.
                 </p>
+
+                <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
+                <CardComponent
+                    frontImg="https://via.placeholder.com/150"
+                    role="John Doe"
+                    description="Lead Developer"
+                    backInfo="John is an expert in React and Node.js with over 10 years of experience."
+                />
+                <CardComponent
+                    frontImg="https://via.placeholder.com/150"
+                    role="Jane Smith"
+                    description="UI/UX Designer"
+                    backInfo="Jane is a creative designer with a passion for creating intuitive user interfaces."
+                />
+                {/* Add more cards as needed */}
+            </div>
             </section>
+
+            
+
         </div>
     );
 };
