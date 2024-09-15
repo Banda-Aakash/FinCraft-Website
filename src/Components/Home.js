@@ -8,6 +8,9 @@ const Home = () => {
     return (
         <div className="home-page">
             <div className='container'>
+                <div>
+                    <img src='./thathanobg.png' className='thatha'></img>
+                </div>
                 <div className="content">
                     <h6 className='heading'>Investments made faster with FinCraft!</h6>
 
@@ -90,7 +93,7 @@ const Home = () => {
                     <p className='Heading'>Roundup Savings!</p>
                     <p className='Description'>Save automatically on every spend</p>
                 </div>
-                <img src='./Coins.png' alt='RoundUp!' className='augmountimg'></img>
+                <img src='./logo.png' alt='RoundUp!' className='img'></img>
             </div>
 
             <div className='container2'>
@@ -117,8 +120,18 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className=''>
-
+            <div className='download'>
+                <Link to="https://play.google.com" className="download-button">
+                    <img
+                        src="Playstore.png"
+                        alt="Google Play"
+                        className="button-logo"
+                    />
+                    <div className="button-text">
+                        <span className="platform">For Android</span>
+                        <span className="download-now">Download now</span>
+                    </div>
+                </Link>
             </div>
         </div>
     );

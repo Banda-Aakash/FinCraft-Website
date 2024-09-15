@@ -9,6 +9,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.thatha{
+  max-width: 250px;
+}
 .Image {
   padding-right: 200px;
   max-width: 250px;
@@ -49,7 +52,6 @@
   max-width: 60%;
   text-align: center;
   margin-bottom: 130px;
-  padding: 0 50px;
   text-wrap: balance;
 }
 
@@ -60,7 +62,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-top: 180px;
-  margin-left: 180px;
+  margin-left: 140px;
   font-size: 3.5em;
   margin-bottom: 20px;
   font-family: "Inknut Antiqua", serif;
@@ -218,6 +220,10 @@
     max-width: 100px; /* Adjust image size for mobile */
   }
 
+  .augmountimg {
+    max-width: 150px; /* Adjust image size for mobile */
+  }
+
   .Heading {
     font-size: 1.5em; /* Adjust heading size in containers */
     text-align: center; /* Center align heading */
@@ -235,3 +241,9 @@
   }
 }
 
+.download{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
