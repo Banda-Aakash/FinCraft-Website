@@ -18,6 +18,21 @@
   display: inline;
 }
 
+.paytmlogo{
+  padding: 10px;
+  max-width: 100px;
+}
+
+.augmountlogo{
+  padding: 12px;
+  padding-left: 30px;
+  max-width: 160px;
+}
+
+.lendboxlogo{
+  padding: 5px;
+  max-width: 140px;
+}
 .carousel-container2 {
   padding-top: 20px;
   width: 100%; /* Ensure full width for the carousel container */

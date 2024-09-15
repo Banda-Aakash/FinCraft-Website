@@ -51,39 +51,9 @@ const Home = () => {
 
                     <p className='Partners'>Our Partners</p>
 
-                    <Link to="https://play.google.com" className="download-button">
-                        <img
-                            src="Playstore.png"
-                            alt="Google Play"
-                            className="button-logo"
-                        />
-                        <div className="button-text">
-                            <span className="platform">For Android</span>
-                            <span className="download-now">Download now</span>
-                        </div>
-                    </Link>
-                    <Link to="https://play.google.com" className="download-button">
-                        <img
-                            src="Playstore.png"
-                            alt="Google Play"
-                            className="button-logo"
-                        />
-                        <div className="button-text">
-                            <span className="platform">For Android</span>
-                            <span className="download-now">Download now</span>
-                        </div>
-                    </Link>
-                    <Link href="https://play.google.com" className="download-button">
-                        <img
-                            src="Playstore.png"
-                            alt="Google Play"
-                            className="button-logo"
-                        />
-                        <div className="button-text">
-                            <span className="platform">For Android</span>
-                            <span className="download-now">Download now</span>
-                        </div>
-                    </Link>
+                    <img src='./image.webp' alt='Paytm' className='paytmlogo'></img>
+                    <img src='./Augmount.webp' alt='Paytm' className='augmountlogo'></img>
+                    <img src='./lendbox.png' alt='Paytm' className='lendboxlogo'></img>
                 </div>
                 <div className="carousel-container">
                     <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} interval={3000}>

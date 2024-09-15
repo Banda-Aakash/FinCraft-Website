@@ -1,0 +1,36 @@
+/* ContinuousCarousel.css */
+.carousel-container2 {
+    overflow: hidden;
+    width: 100%; /* Ensure full width */
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  .carousel2 {
+    display: flex;
+    width: 200%; /* Double the width to account for duplicated items */
+    animation: scroll 10s linear infinite;
+  }
+  
+  .carousel-item2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure item takes full height */
+  }
+  
+  .carousel-image2 {
+    /* width: 100%; */
+    max-height: 50px;
+    height: auto;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
