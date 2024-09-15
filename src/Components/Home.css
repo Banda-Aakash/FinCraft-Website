@@ -187,6 +187,11 @@
     align-items: center; /* Center align items */
   }
 
+  .thatha{
+    display: none;
+    /* max-width: 100px; */
+  }
+
   .heading {
     font-size: 1.8em; /* Adjust heading size for mobile screens */
     margin-left: 0; /* Remove left margin */

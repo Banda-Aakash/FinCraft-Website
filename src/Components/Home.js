@@ -9,7 +9,7 @@ const Home = () => {
         <div className="home-page">
             <div className='container'>
                 <div>
-                    <img src='./thathanobg.png' className='thatha'></img>
+                    <img src='./thathanobg.png' className='thatha' alt='thatha'></img>
                 </div>
                 <div className="content">
                     <h6 className='heading'>Investments made faster with FinCraft!</h6>
@@ -97,7 +97,7 @@ const Home = () => {
             </div>
 
             <div className='container2'>
-                <img src='./Augmount.png' alt='RoundUp!' className='augmountimg'></img>
+                <img src='./AugmountGold.png' alt='RoundUp!' className='augmountimg'></img>
                 <div className='content2'>
                     <p className='Heading'>Invest in 24K Gold!</p>
                     <p className='Description'>Convert your savings into gold investments.</p>
@@ -109,7 +109,7 @@ const Home = () => {
                     <p className='Heading'>Invest in Silver!</p>
                     <p className='Description'>Turn your savings into silver investments.</p>
                 </div>
-                <img src='./logo.png' alt='RoundUp!' className='img'></img>
+                <img src='./AugmountSilver.png' alt='RoundUp!' className='augmountimg'></img>
             </div>
 
             <div className='container4'>
