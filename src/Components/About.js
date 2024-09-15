@@ -44,12 +44,16 @@ const About = () => {
 
     return (
         <div className="about-page">
-            <h1>About Us</h1>
-            <p>
-                FinCraft is committed to revolutionizing the investment industry with fast and secure services.
-                Our team is dedicated to providing users with the best experience in managing their investments.
-            </p>
+            {/* About Us Section */}
+            <div className="about-container">
+                <div className="about-content">
+                    <h1>About Us</h1>
+                    <p>Saving money is the first step toward achieving financial freedom. At FinCraft, we believe that even the smallest contributions can lead to big results. We're here to make saving a natural part of your routine, helping you build a better financial future, one day at a time.</p> 
+                    <p>Yours truly, <br /> FinCraft ❤️</p>
+                </div>
+            </div>
 
+            {/* Story Section */}
             <section className="story-section">
                 <h2>Our Story</h2>
                 <p>
@@ -59,7 +63,7 @@ const About = () => {
                 </p>
             </section>
 
-            {/* Timeline Section using react-vertical-timeline-component */}
+            {/* Timeline Section */}
             <section className="timeline-section">
                 <h2>Timeline</h2>
                 <VerticalTimeline animate={true} layout="2-columns">
@@ -109,6 +113,7 @@ const About = () => {
                 </VerticalTimeline>
             </section>
 
+            {/* Vision Section */}
             <section className="vision-section">
                 <h2>Our Vision</h2>
                 <p>
@@ -117,6 +122,7 @@ const About = () => {
                 </p>
             </section>
 
+            {/* Team Section */}
             <section className="team-section">
                 <h2>Our Team & Culture</h2>
                 <p>
