@@ -68,12 +68,36 @@ const Home = () => {
                 </Link>
             </div>
             <div className='container1'>
-                <p>Save Automatically!</p>
+                <div className='content2'> 
+                    <p className='Heading'>Roundup Savings!</p>
+                    <p className='Description'>Save automatically on every spend</p>
+                </div>
+                <img src='./logo.png' alt='RoundUp!' className='img'></img>
             </div>
-            <div className='container2'>Save Automatically!</div>
-            <div className='container3'>ihi</div>
-            <div className='container4'>ihi</div>
 
+            <div className='container2'>
+                <img src='./logo.png' alt='RoundUp!' className='img'></img>
+                <div className='content2'>
+                    <p className='Heading'>Invest in 24K Gold!</p>
+                    <p className='Description'>Convert your savings into gold investments.</p>
+                </div>
+            </div>
+
+            <div className='container3'>
+                <div className='content2'>
+                    <p className='Heading'>Invest in Silver!</p>
+                    <p className='Description'>Turn your savings into silver investments.</p>
+                </div>
+                <img src='./logo.png' alt='RoundUp!' className='img'></img>
+            </div>
+
+            <div className='container4'>
+                <img src='./logo.png' alt='RoundUp!' className='img'></img>
+                <div className='content2'>
+                    <p className='Heading'>Invest into P2P!</p>
+                    <p className='Description'>Grow your savings through peer to peer investments</p>
+                </div>
+            </div>
 
         </div>
     );

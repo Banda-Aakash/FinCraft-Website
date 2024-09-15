@@ -73,28 +73,63 @@
   font-family: "Inknut Antiqua", serif;
 }
 .container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 80px;
-  font-family: "Sofadi One", system-ui;
-  font-weight: 400;
-  font-style: normal;
+  padding-left: 150px;
+  padding-right: 150px;
   background: linear-gradient(#ffd36c, #ff5353); /* Add gradient */
-  font-size: 40px;
 }
 .container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 80px;
-  font-family: "Playpen Sans", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  background: linear-gradient(#eccfcf, #a85dc2); /* Add gradient */
-  font-size: 40px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background: linear-gradient(#eccfcf, #a85dc2);
+  
 }
 .container3 {
-  background: linear-gradient(#1CC099, #0087fd); /* Add gradient */
-  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background: linear-gradient(#1CC099, #0087fd);
 }
 
 .container4 {
-  background: linear-gradient(#e760aa, #bf66dc); /* Add gradient */
-  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background: linear-gradient(#e760aa, #bf66dc);
+}
+.Heading{
+  margin: 0px;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+}
+.Description{
+  margin: 0px;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}  
+.img{
+  max-width: 150px;
+  height: auto;
+}
+
+
+.content2{
+  max-width: 30%;
 }
