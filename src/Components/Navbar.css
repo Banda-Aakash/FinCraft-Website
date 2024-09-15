@@ -38,10 +38,23 @@
     text-decoration: none;
     font-size: 20px;
     position: relative;
-    font-family: 'Inknut Antiqua', serif;
+    font-family: serif;
 }
 .navLink:hover {
     color: #CF5E0D;
+    /* color:#1cc099; */
+    
+    /* background: linear-gradient( #1cc099, #0087fd); */
+  
+  /* Set the background size */
+  /* -webkit-background-clip: text; */
+  
+  /* Make the background visible only on the text */
+  /* -webkit-text-fill-color: transparent; */
+  
+  /* This is to ensure it works in some older browsers */
+  /* background-clip: text; */
+  /* text-fill-color: transparent; */
 }
 
 .logo{

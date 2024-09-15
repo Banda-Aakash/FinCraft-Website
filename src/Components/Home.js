@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className="home-page">
             <div className="content">
-                <h6 className='heading'>Investments made faster with FinCraft</h6>
+                <h6 className='heading'>Investments made faster with FinCraft!</h6>
 
                 <Link to="https://play.google.com" className="download-button">
                     <img
@@ -67,9 +67,13 @@ const Home = () => {
                     </div>
                 </Link>
             </div>
-            <div className='container1'>ihi</div>
-            <div className='container2'>ihi</div>
+            <div className='container1'>
+                <p>Save Automatically!</p>
+            </div>
+            <div className='container2'>Save Automatically!</div>
             <div className='container3'>ihi</div>
+            <div className='container4'>ihi</div>
+
 
         </div>
     );

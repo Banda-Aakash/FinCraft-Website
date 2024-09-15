@@ -6,20 +6,25 @@
 }
 .content {
   width: 100%;
-  max-width: 50%;
+  max-width:60%;
   text-align: center;
   margin-bottom: 130px;
   padding: 0 50px;
+  text-wrap: balance;
 }
 
 .heading {
-  padding-top: 100px;
-  font-size: 3em;
-  margin-top: 20px;
+  /* color: #1CC099; */
+  background: linear-gradient( 60deg,#1cc099, #0087fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 180px;
+  margin-left: 180px;
+  font-size: 3.5em;
   margin-bottom: 20px;
   font-family: "Inknut Antiqua", serif;
   line-height: 1.4;
-  font-size: 4em;
   text-align: left;
 }
 
@@ -68,15 +73,28 @@
   font-family: "Inknut Antiqua", serif;
 }
 .container1 {
-  /* margin-bottom:2px; */
+  padding: 80px;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
   background: linear-gradient(#ffd36c, #ff5353); /* Add gradient */
-  height: 300px;
+  font-size: 40px;
 }
 .container2 {
-  background: linear-gradient(#e760aa, #bf66dc); /* Add gradient */
-  height: 300px;
+  padding: 80px;
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(#eccfcf, #a85dc2); /* Add gradient */
+  font-size: 40px;
 }
 .container3 {
-  background: linear-gradient(#e760aa, #ffb753); /* Add gradient */
+  background: linear-gradient(#1CC099, #0087fd); /* Add gradient */
+  height: 300px;
+}
+
+.container4 {
+  background: linear-gradient(#e760aa, #bf66dc); /* Add gradient */
   height: 300px;
 }
