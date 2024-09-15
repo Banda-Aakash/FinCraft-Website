@@ -1,4 +1,5 @@
 .about-page {
+    margin-top: 50px;
     padding: 50px;
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -13,7 +14,7 @@
 }
 
 .about-page p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 40px;
     max-width: 800px;
@@ -25,7 +26,7 @@
 .timeline-section, 
 .vision-section, 
 .team-section {
-    margin-bottom: 50px;
+    padding: 20px;
 }
 
 .story-section h2, 
@@ -34,7 +35,7 @@
 .team-section h2 {
     font-size: 2.5rem;
     color: #495057;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .story-section p, 
@@ -47,48 +48,44 @@
     margin-right: auto;
 }
 
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Timeline Styles */
+.vertical-timeline-element {
+    transition: all 0.6s ease;
 }
 
-.timeline-item {
-    background-color: white;
-    border: 2px solid #0d6efd;
-    border-radius: 10px;
+.vertical-timeline-element-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-bottom: 20px;
-    width: 60%;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 2px solid #e9ecef;
 }
 
-.timeline-item h3 {
+.vertical-timeline-element-title {
+    font-size: 1.5rem;
     color: #0d6efd;
-    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-.timeline-item p {
-    font-size: 1.2rem;
+.vertical-timeline-element p {
+    font-size: 1.1rem;
     color: #495057;
+    line-height: 1.5;
 }
 
-.vision-section, 
-.team-section {
-    background-color: #e9ecef;
-    padding: 30px 0;
-}
-
-.vision-section p, 
-.team-section p {
-    font-size: 1.3rem;
-}
-
-/* Vertical Timeline Element Date Styling */
 .vertical-timeline-element-date {
-    color: #000000; /* Black color for the date */
+    color: #6c757d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.vertical-timeline-element-icon {
+    background-color: #0d6efd;
+    color: white;
+    box-shadow: 0 0 0 4px #fff;
 }
 
 /* Animation and Visibility */
@@ -103,26 +100,54 @@
     transform: translateY(0);
 }
 
-.vertical-timeline-element--delay-1 {
-    transition-delay: 0.1s;
+.delay-0 { transition-delay: 0s; }
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+.delay-4 { transition-delay: 0.8s; }
+
+/* Vision and Team Section Styling */
+.vision-section, 
+.team-section {
+    background-color: #e9ecef;
+    padding: 30px 0;
 }
 
-.vertical-timeline-element--delay-2 {
-    transition-delay: 0.2s;
-}
-
-.vertical-timeline-element--delay-3 {
-    transition-delay: 0.3s;
-}
-
-.vertical-timeline-element--delay-4 {
-    transition-delay: 0.4s;
-
-/* Add more delay classes as needed */
-
-/* Vision and Team Section Padding */
 .vision-section p, 
 .team-section p {
     font-size: 1.3rem;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-page {
+        padding: 20px;
+    }
+
+    .about-page h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-page p {
+        font-size: 1.1rem;
+    }
+
+    .story-section h2, 
+    .timeline-section h2, 
+    .vision-section h2, 
+    .team-section h2 {
+        font-size: 2rem;
+    }
+
+    .vertical-timeline-element-content {
+        padding: 15px;
+    }
+
+    .vertical-timeline-element-title {
+        font-size: 1.3rem;
+    }
+
+    .vertical-timeline-element p {
+        font-size: 1rem;
+    }
 }

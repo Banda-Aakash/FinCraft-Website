@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css'; // Import the CSS for styling
 import './About.css';
@@ -14,6 +14,33 @@ const About = () => {
         titleColor: '#405b73',
         yearColor: '#405b73',
     };
+
+    useEffect(() => {
+        const elements = document.querySelectorAll('.vertical-timeline-element');
+
+        const observerOptions = {
+            root: null, // Use the viewport as the container
+            rootMargin: '0px',
+            threshold: 0.1, // Trigger when 10% of the element is in view
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible', `delay-${index}`);
+                } else {
+                    entry.target.classList.remove('visible', `delay-${index}`);
+                }
+            });
+        }, observerOptions);
+
+        elements.forEach((element) => observer.observe(element));
+
+        // Cleanup observer on unmount
+        return () => {
+            elements.forEach((element) => observer.unobserve(element));
+        };
+    }, []);
 
     return (
         <div className="about-page">
@@ -32,7 +59,7 @@ const About = () => {
                 </p>
             </section>
 
-            {/* Timeline Section using react-vertical-timeline-component */} 
+            {/* Timeline Section using react-vertical-timeline-component */}
             <section className="timeline-section">
                 <h2>Timeline</h2>
                 <VerticalTimeline animate={true} layout="2-columns">
@@ -42,10 +69,6 @@ const About = () => {
                         contentArrowStyle={{ borderRight: `7px solid ${customTheme.eventColor}` }}
                         date="2015"
                         iconStyle={{ background: customTheme.dotColor, color: customTheme.borderDotColor }}
-                        intersectionObserverProps={{
-                            rootMargin: '0px 0px -50px 0px',
-                            triggerOnce: false,
-                        }}
                     >
                         <h3 className="vertical-timeline-element-title">2015 - Founding Year</h3>
                         <p>FinCraft was founded, aiming to disrupt the traditional investment landscape.</p>
@@ -57,10 +80,6 @@ const About = () => {
                         contentArrowStyle={{ borderRight: `7px solid ${customTheme.eventColor}` }}
                         date="2017"
                         iconStyle={{ background: customTheme.dotColor, color: customTheme.borderDotColor }}
-                        intersectionObserverProps={{
-                            rootMargin: '0px 0px -50px 0px',
-                            triggerOnce: false,
-                        }}
                     >
                         <h3 className="vertical-timeline-element-title">2017 - First Major Funding</h3>
                         <p>We secured Series A funding, allowing us to expand our services and reach new markets.</p>
@@ -72,10 +91,6 @@ const About = () => {
                         contentArrowStyle={{ borderRight: `7px solid ${customTheme.eventColor}` }}
                         date="2019"
                         iconStyle={{ background: customTheme.dotColor, color: customTheme.borderDotColor }}
-                        intersectionObserverProps={{
-                            rootMargin: '0px 0px -50px 0px',
-                            triggerOnce: false,
-                        }}
                     >
                         <h3 className="vertical-timeline-element-title">2019 - Launch of Mobile App</h3>
                         <p>Our innovative mobile app was released, making it easier than ever for users to manage their investments.</p>
@@ -87,10 +102,6 @@ const About = () => {
                         contentArrowStyle={{ borderRight: `7px solid ${customTheme.eventColor}` }}
                         date="2022"
                         iconStyle={{ background: customTheme.dotColor, color: customTheme.borderDotColor }}
-                        intersectionObserverProps={{
-                            rootMargin: '0px 0px -50px 0px',
-                            triggerOnce: false,
-                        }}
                     >
                         <h3 className="vertical-timeline-element-title">2022 - International Expansion</h3>
                         <p>FinCraft expanded its services globally, reaching users in over 30 countries.</p>
