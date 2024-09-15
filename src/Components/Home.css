@@ -133,3 +133,59 @@
 .content2{
   max-width: 30%;
 }
+
+
+/* Mobile-specific styles */
+@media (max-width: 576px) {
+  .home-page {
+    margin-top: 100px; /* Adjust top margin */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .heading {
+    font-size: 1.8em; /* Adjust heading size for mobile screens */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 50px; /* Adjust top margin */
+    text-align: center; /* Center the heading text */
+  }
+
+  .content {
+    max-width: 90%; /* Make content fit better on mobile */
+    padding: 0 20px; /* Reduce side padding */
+    margin-bottom: 50px; /* Reduce bottom margin */
+  }
+
+  .download-button {
+    width: 50%; /* Make button full-width on mobile */
+    justify-content: center; /* Center button content */
+    padding: 10px; /* Adjust button padding */
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .container1, .container2, .container3, .container4 {
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px 10px; /* Reduce padding */
+    align-items: center; /* Center items */
+  }
+
+  .img {
+    max-width: 100px; /* Adjust image size for mobile */
+  }
+
+  .Heading {
+    font-size: 1.5em; /* Adjust heading size in containers */
+    text-align: center; /* Center align heading */
+  }
+
+  .Description {
+    font-size: 1rem; /* Adjust description font size */
+    text-align: center; /* Center align description */
+    margin-top: 10px; /* Add some margin for spacing */
+  }
+
+  .content2 {
+    max-width: 100%; /* Make content take full width */
+    margin-bottom: 20px; /* Add spacing between elements */
+  }
+}

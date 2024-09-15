@@ -6,18 +6,18 @@
     padding: 10px;
     padding-left: 0px;
     height: 60px;
-    position: fixed; 
+    position: fixed;
     top: 0;
-    width: 100%; 
-    z-index: 1000; 
+    width: 100%;
+    z-index: 1000;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Align items in the center */
 }
 
 .navList {
@@ -26,7 +26,6 @@
     padding: 0;
     padding-top: 10px;
     padding-right: 20px;
-
 }
 
 .navItem {
@@ -40,25 +39,46 @@
     position: relative;
     font-family: serif;
 }
+
 .navLink:hover {
     color: #CF5E0D;
-    /* color:#1cc099; */
-    
-    /* background: linear-gradient( #1cc099, #0087fd); */
-  
-  /* Set the background size */
-  /* -webkit-background-clip: text; */
-  
-  /* Make the background visible only on the text */
-  /* -webkit-text-fill-color: transparent; */
-  
-  /* This is to ensure it works in some older browsers */
-  /* background-clip: text; */
-  /* text-fill-color: transparent; */
 }
 
-.logo{
-    margin-left: 0px;
+.logo {
     max-width: 200px;
     max-height: 60.2px;
+}
+
+/* Hide the dropdown by default */
+.menu-icon {
+    display: none; /* Hidden on larger screens */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 576px) {
+    .navList {
+        display: none; /* Hide nav items on mobile by default */
+        flex-direction: column; /* Stack nav items vertically */
+        background-color: black; /* Dropdown background color */
+        position: absolute; /* Position dropdown absolutely */
+        top: 60px; /* Position below navbar */
+        right: 0;
+        width: 100%; /* Full width on mobile */
+        padding: 10px 0;
+    }
+
+    .navList.open {
+        display: flex; /* Show nav items when 'open' class is present */
+    }
+
+    .navItem {
+        margin: 10px 0; /* Add margin between items */
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile */
+    }
 }
