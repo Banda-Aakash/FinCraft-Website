@@ -18,6 +18,11 @@
   display: inline;
 }
 
+.carousel-container2 {
+  padding-top: 20px;
+  width: 100%; /* Ensure full width for the carousel container */
+  padding-bottom: 40px;
+}
 
 .carousel-container {
   margin-top: 30px;

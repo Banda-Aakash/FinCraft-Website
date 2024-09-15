@@ -3,6 +3,17 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import ContinuousCarousel from './ContinuousCarousel';
+
+
+const items = [
+    { src: './image.webp', alt: 'Mobile 1' },
+    { src: './amfi.webp', alt: 'Mobile 2' },
+    { src: './Augmount.webp', alt: 'Mobile 3' },
+    { src: './npci.webp', alt: 'Mobile 3' },
+    { src: './lendbox.png', alt: 'Mobile 3' },
+];
+
 
 const Home = () => {
     return (
@@ -132,6 +143,11 @@ const Home = () => {
                         <span className="download-now">Download now</span>
                     </div>
                 </Link>
+            </div>
+
+            <div>
+            <p className='Partners'>Our Investors & Partners</p>
+                <ContinuousCarousel items={items} />
             </div>
         </div>
     );
