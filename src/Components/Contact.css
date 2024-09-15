@@ -1,0 +1,124 @@
+/* General page layout */
+.contact-page {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/public/desk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.4); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .contact-info h1 {
+    font-size: 3rem;
+    color: #222;
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+  }
+  
+  .contact-info a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    margin: 5px;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 48%;
+    background-color: #f8f9fa;
+  }
+  
+  .full-width {
+    width: 80%;
+  }
+  
+  .message-field {
+    height: 150px;
+    width: 90%;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .attach-btn, .submit-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .attach-btn {
+    background-color: #e9ecef;
+    color: #6c757d;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .contact-info {
+      padding: 20px;
+    }
+  }
+  
