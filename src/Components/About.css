@@ -1,5 +1,4 @@
 .about-page {
-    margin-top: 50px;
     padding: 50px;
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -8,9 +7,14 @@
 }
 
 .about-page h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
-    color: #0d6efd;
+    color: #1cc099; /* Matching the gradient color from home page */
+    background: linear-gradient(60deg, #1cc099, #0087fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Inknut Antiqua", serif;
 }
 
 .about-page p {
@@ -20,12 +24,14 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .story-section, 
 .timeline-section, 
 .vision-section, 
 .team-section {
+    margin-bottom: 50px;
     padding: 20px;
 }
 
@@ -34,8 +40,9 @@
 .vision-section h2, 
 .team-section h2 {
     font-size: 2.5rem;
-    color: #495057;
-    /* margin-bottom: 20px; */
+    color: #405b73; /* Using a complementary color */
+    margin-bottom: 20px;
+    font-family: "Inknut Antiqua", serif;
 }
 
 .story-section p, 
@@ -57,14 +64,15 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 2px solid #e9ecef;
 }
 
 .vertical-timeline-element-title {
     font-size: 1.5rem;
-    color: #0d6efd;
+    color: #1cc099; /* Matching the gradient color from home page */
     margin-bottom: 10px;
+    font-family: "Inknut Antiqua", serif;
 }
 
 .vertical-timeline-element p {
@@ -83,9 +91,9 @@
 }
 
 .vertical-timeline-element-icon {
-    background-color: #0d6efd;
+    background-color: #1cc099; /* Matching the gradient color from home page */
     color: white;
-    box-shadow: 0 0 0 4px #fff;
+    box-shadow: 0 0 0 4px #ffffff;
 }
 
 /* Animation and Visibility */
