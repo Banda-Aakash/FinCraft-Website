@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="contact-info">
           <h1>Let's work together.</h1>
           <p>
-            Or reach us via: <a href="mailto:Publius@mail.com">Publius@mail.com</a>
+            Or reach us via: <a href="mailto:Publius@mail.com">FinCraft@gmail.com</a>
           </p>
           <form className="contact-form">
             <div className="input-group">

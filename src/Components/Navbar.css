@@ -51,6 +51,7 @@
 
 /* Hide the dropdown by default */
 .menu-icon {
+    margin-right: 20px;
     display: none; /* Hidden on larger screens */
     font-size: 30px;
     color: white;
@@ -75,7 +76,9 @@
     }
 
     .navItem {
-        margin: 10px 0; /* Add margin between items */
+        margin: 10px 0;
+        margin-left: 40px;
+
     }
 
     .menu-icon {

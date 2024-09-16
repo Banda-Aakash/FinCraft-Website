@@ -1,36 +1,55 @@
-/* ContinuousCarousel.css */
 .carousel-container2 {
-    overflow: hidden;
-    width: 100%; /* Ensure full width */
-    height: 200px; /* Adjust height as needed */
+  overflow: hidden;
+  width: 100%; /* Ensure full width */
+  height: 200px; /* Adjust height as needed */
+}
+
+.carousel2 {
+  display: flex;
+  width: calc(200% + 40px); /* Increase the width to accommodate gaps */
+  animation: scroll 10s linear infinite;
+}
+
+.carousel-item2 {
+  flex: 1 0 auto; /* Prevent items from shrinking */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure item takes full height */
+  padding: 0 10px;
+}
+
+.carousel-image2 {
+  max-height: 50px;
+  height: auto;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
   }
-  
-  .carousel2 {
-    display: flex;
-    width: 200%; /* Double the width to account for duplicated items */
-    animation: scroll 10s linear infinite;
+  to {
+    transform: translateX(-50%);
   }
-  
-  .carousel-item2 {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Ensure item takes full height */
-  }
-  
+}
+
+@media (max-width: 576px) {
   .carousel-image2 {
-    /* width: 100%; */
-    max-height: 50px;
+    max-height: 30px;
     height: auto;
   }
-  
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
+
+  .carousel2 {
+    width: calc(200% + 50px);
+    animation: scroll-mobile 10s linear infinite; /* Adjust animation for mobile */
   }
-  
+}
+
+@keyframes scroll-mobile {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%); /* Ensure the animation scrolls all the way */
+  }
+}

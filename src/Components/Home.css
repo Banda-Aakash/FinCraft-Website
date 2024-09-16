@@ -34,9 +34,10 @@
   max-width: 140px;
 }
 .carousel-container2 {
-  padding-top: 20px;
+  margin-top: 100px;
+  /* padding-top: 30px; */
   width: 100%; /* Ensure full width for the carousel container */
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .carousel-container {
@@ -199,6 +200,77 @@
   max-width: 30%;
 }
 
+.download{
+  justify-content: center;
+  align-items: center;
+}
+
+.why{
+  display:block;
+  color: #383838;
+  font-weight: 800;
+  font-size: 2em;
+  font-family: "Inknut Antiqua", serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.whycontent{
+  margin-left: 180px;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  text-align: center;
+}
+.setup{
+  width: 30%;
+}
+
+.video{
+  width:"560";
+  /* height:"315" */
+}
+
+.investment-options-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+
+.option-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.option-icon {
+  font-size: 40px;
+  color: #b38b3a; /* Set icon color */
+  margin-bottom: 10px;
+}
+
+.h3 {
+  font-size: 1.16em;
+  font-family: "Inknut Antiqua", serif;
+  color: #002860; /* Set heading color */
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.p {
+
+  margin: 0px;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  color: #333; /* Set text color */
+  line-height: 1.5;
+}
+
 /* Mobile-specific styles */
 @media (max-width: 576px) {
   .home-page {
@@ -210,6 +282,22 @@
   .thatha{
     display: none;
     /* max-width: 100px; */
+  }
+
+  .paytmlogo{
+    padding: 10px;
+    max-width: 60px;
+  }
+  
+  .augmountlogo{
+    padding: 12px;
+    padding-left: 30px;
+    max-width: 90px;
+  }
+  
+  .lendboxlogo{
+    padding: 5px;
+    max-width: 120px;
   }
 
   .heading {
@@ -255,20 +343,57 @@
   }
 
   .Description {
-    font-size: 1rem; /* Adjust description font size */
-    text-align: center; /* Center align description */
-    margin-top: 10px; /* Add some margin for spacing */
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
   }
 
   .content2 {
-    max-width: 100%; /* Make content take full width */
-    margin-bottom: 20px; /* Add spacing between elements */
+    max-width: 100%;
+    margin-bottom: 20px;
   }
-}
 
-.download{
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .download{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whycontent {
+    margin-left: 30px;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .video{
+    /* max-width: 0px; */
+    display: none;
+  }
+
+  .setup {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .investment-options-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .option-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .option-icon {
+    font-size: 30px;
+  }
+
+  .h3 {
+    font-size: 1.2em;
+  }
+
+  .p {
+    font-size: 16px;
+  }
 }
