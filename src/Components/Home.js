@@ -23,13 +23,13 @@ const slides = [
     },
     {
         title: 'RoundUp',
-        description: 'Spenny rounds up the amount to the nearest Rs.10. The difference is then collected…',
+        description: 'FinCraft rounds up the amount to the nearest Rs.10. The difference is then collected…',
         image: './Save.png',
     },
     {
         title: 'Invest',
-        description: 'Once the cart is filled, the amount is invested automatically into Mutual Funds or Gold, as per your choice!',
-        image: './Invest.png',
+        description: 'The collected amount is invested automatically into Gold or Silver or P2P or Mutual Funds, as per your choice!',
+        image: './thathanobg.png',
     },
 ];
 
@@ -37,9 +37,6 @@ const Home = () => {
     return (
         <div className="home-page">
             <div className='container'>
-                <div>
-                    <img src='./thathanobg.png' className='thatha' alt='thatha'></img>
-                </div>
                 <div className="content">
                     <h6 className='heading'>Investments made faster with FinCraft!</h6>
 
@@ -93,13 +90,9 @@ const Home = () => {
                 <VerticalCarousel slides={slides} />
             </div>
 
-            <div className='container1'>
-                <div className='content2'>
-                    <p className='Heading'>Roundup Savings!</p>
-                    <p className='Description'>Save automatically on every spend</p>
-                </div>
-                <img src='./logo.png' alt='RoundUp!' className='img'></img>
-            </div>
+
+            <p className='why'>Investment Options!</p>
+
 
             <div className='container2'>
                 <img src='./AugmountGold.png' alt='RoundUp!' className='augmountimg'></img>
@@ -123,6 +116,14 @@ const Home = () => {
                     <p className='Heading'>Invest into P2P!</p>
                     <p className='Description'>Grow your savings through peer to peer investments</p>
                 </div>
+            </div>
+
+            <div className='container1'>
+                <div className='content2'>
+                    <p className='Heading'>Invest in Mutual Funds!</p>
+                    <p className='Description'>Save automatically on every spend</p>
+                </div>
+                <img src='./logo.png' alt='RoundUp!' className='img'></img>
             </div>
 
             <div className='download'>
