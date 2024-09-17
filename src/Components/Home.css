@@ -1,4 +1,4 @@
-.home-page {
+  .home-page {
   margin-top: 50px;
   min-height: 100vh;
   flex-direction: row;
@@ -139,11 +139,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* place-items: center; */
   padding: 80px;
   padding-left: 150px;
   padding-right: 150px;
-  background: linear-gradient(#ffd36c, #ff5353); /* Add gradient */
+  background: linear-gradient(#ffd36c, #ff5353);
 }
+
 .container2 {
   display: flex;
   justify-content: space-between;

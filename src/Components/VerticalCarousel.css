@@ -1,0 +1,127 @@
+.vertical-vcarousel {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* For larger screens */
+  .vcarousel-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 400px;
+  }
+  
+  .vcarousel-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center arrows and titles */
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  
+  .vcarousel-title {
+    font-family: "Inknut Antiqua", serif;
+    margin: 10px 0;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .vcarousel-title.highlight {
+    font-family: "Inknut Antiqua", serif;
+    color: #007bff; /* Highlight color for the current title */
+    font-weight: bold;
+  }
+  
+  .vcarousel-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .vcarousel-description {
+    max-width: 40%;
+    font-family: "Inknut Antiqua", serif;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .vcarousel-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .vcarousel-image img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  .arrow-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .vcarousel-wrapper {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+    }
+  
+    .vcarousel-titles {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px;
+      flex-wrap: wrap; /* Allow titles to wrap */
+    }
+  
+    .vcarousel-title {
+      margin: 5px 10px;
+      font-size: 1rem; /* Adjust font size for mobile */
+    }
+  
+    .vcarousel-title.highlight {
+      font-size: 1.2rem; /* Slightly larger for highlighted title */
+    }
+  
+    .vcarousel-content {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .vcarousel-description {
+      max-width: 90%;
+      padding: 10px;
+    }
+  
+    .arrow-button {
+      font-size: 1.5rem; /* Smaller arrow size for mobile */
+    }
+  
+    .vcarousel-image {
+      width: 90%;
+    }
+  
+    .vcarousel-image img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

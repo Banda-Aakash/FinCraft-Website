@@ -1,10 +1,11 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ContinuousCarousel from './ContinuousCarousel';
 import { FaPiggyBank, FaCoins, FaShoppingCart, FaUnlock } from 'react-icons/fa';
+import { Carousel } from 'react-responsive-carousel';
+import VerticalCarousel from './VerticalCarousel';
 
 const items = [
     { src: './image.webp', alt: 'Mobile 1' },
@@ -14,6 +15,23 @@ const items = [
     { src: './lendbox.png', alt: 'Mobile 3' },
 ];
 
+const slides = [
+    {
+        title: 'Spend',
+        description: 'Every time you spend via your cards, UPI or netbanking…',
+        image: './Spend.png',
+    },
+    {
+        title: 'RoundUp',
+        description: 'Spenny rounds up the amount to the nearest Rs.10. The difference is then collected…',
+        image: './Save.png',
+    },
+    {
+        title: 'Invest',
+        description: 'Once the cart is filled, the amount is invested automatically into Mutual Funds or Gold, as per your choice!',
+        image: './Invest.png',
+    },
+];
 
 const Home = () => {
     return (
@@ -25,7 +43,7 @@ const Home = () => {
                 <div className="content">
                     <h6 className='heading'>Investments made faster with FinCraft!</h6>
 
-                    <Link to="https://play.google.com" className="download-button">
+                    <Link to="https://play.google.com" className="download-button" onClick={(e) => e.preventDefault()}>
                         <img
                             src="Playstore.png"
                             alt="Google Play"
@@ -69,6 +87,12 @@ const Home = () => {
                     </Carousel>
                 </div>
             </div>
+
+            <p className='why'>How FinCraft Works?</p>
+            <div>
+                <VerticalCarousel slides={slides} />
+            </div>
+
             <div className='container1'>
                 <div className='content2'>
                     <p className='Heading'>Roundup Savings!</p>
@@ -154,7 +178,6 @@ const Home = () => {
                     <p className='p'>There are no lock-ins. So, you can safely withdraw your money any time you want without any hassle.</p>
                 </div>
             </div>
-
 
             <div>
                 <p className='Partners'>Our Investors & Partners</p>
